@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <h1>Conference Registration Form</h1>
+    <h3>Required Item (*)</h3>
+    <hr syle="color: green" />
+    <form action="/action_page.php">
+        <table style="width:100%;">
+            <tr><td>Title</td><td><input id="Text1" type="text" /></td><td>&nbsp;</td></tr>
+            <tr><td>First Name*</td><td><input id="Text1" type="text" required /></td><td>&nbsp;</td></tr>
+            <tr><td>Last Name*</td><td><input id="Text1" type="text" required /></td><td>&nbsp;</td></tr>
+            <tr><td>Address*</td><td><textarea id="address" rows="2" cols="20" required></textarea></td><td>&nbsp;</td></tr>
+            <tr><td>Company or University</td><td><input id="Text1" type="text" /></td><td>&nbsp;</td></tr>
+            <tr><td>E-mail*</td><td><input id="Text1" type="text" required /></td><td>&nbsp;</td></tr>
+            <tr><td>Phone Number*</td><td><input id="phone" type="tel" maxlength="12" pattern="\d([0-9]{3})-[0-9]{3}-[0-9]{4}" value="(nnn) nnn-nnnn" required/></td><td>&nbsp;</td></tr>
+            <tr><td>ACGIP Memvership <br /> Number</td><td><input id="Text1" type="text" value="acgip-nnnnnn"/></td><td>&nbsp;</td></tr>
+            <tr><td>Registration Category</td><d></d><td><select id="Select1">
+    <option>ACGIP Member ($695)</option>
+    <option>BBB</option>
+    <option>CCC</option>
+</select></td></tr>
+            <tr><td></td><td><input id="continue" type="submit" value="button" /></td><td>&nbsp;</td></tr>
+        </table>
+    </form>
+</body>
+</html>
